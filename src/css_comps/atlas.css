@@ -1,0 +1,17 @@
+header{
+    min-height: 150px;
+    background-image: url("https://pixabay.com/get/50e7dd454b4faa0df7c5997cc22132761336d9e651_640.png");
+    background-position: center;
+    background-size: cover;
+ 
+   
+}
+
+nav a {
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+

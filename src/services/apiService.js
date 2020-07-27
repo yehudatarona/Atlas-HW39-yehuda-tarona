@@ -1,7 +1,8 @@
 let localUrl = "http://localhost:3000/";
-let realUrl = "https://marketcor.herokuapp.com/"
-export const apiUrl = localUrl;
-// כמה מוצרים להציג בכל עמוד מקסימום
+// let realUrl = "https://restcountries.eu/rest/v2/all"
+let realUrl = "https://restcountries.eu/rest/v2/name/israel"
+export const apiUrl = realUrl;
+
 export let perPage = 4;
 
 export const doApiGet = async (_url) => {

@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import AppAtlas from './atlas_comps/appAtlas';
 
 function App() {
   return (
     <div className="App">
-     Recat work
+     <AppAtlas/>
     </div>
   );
 }
