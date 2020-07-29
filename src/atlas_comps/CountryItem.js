@@ -25,15 +25,15 @@ function CountryItem(props) {
                 </div>
             </div>
 
-            <div className="row " >
-                    <AppMap item={item} />
+            <div className="row" >
+                <AppMap item={item} />
                 <div className="col mt-4 ">
-                    <h3 className>States with borders</h3>
+                    <h3>States with borders</h3>
                     <div className="row pl-2">
                         {temp_ar.map((item, i) => {
                             return (
                                 <div key={i}>
-                                    <Link className="mx-1"  onClick={() => { props.setName(item.name) }} to={"/code/" + item.alpha3Code}>{item.name}</Link>
+                                    <Link onClick={()=>{props.setCourtryName(item.name)}} className="mx-1" to={"/code/" + item.alpha3Code} >{item.name}</Link>
                                 </div>
                             )
                         })}

@@ -4,6 +4,11 @@ header {
   background-position: center;
   background-size: cover;
 }
+nav .backg{
+  min-height: 60px;
+  background-color:red;
+  /* color:white; */
+}
 
 nav a {
  
