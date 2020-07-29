@@ -5,10 +5,10 @@ import CountryItem from './CountryItem';
 
 function Main(props) {
     let [state_arr,setStateArr]=useState([]);
-    let [count,setCount]=useState(0)
+    let [code,setCode]=useState([])
 
     useEffect(()=>{
-        // let url ="https://restcountries.eu/rest/v2/name/"+props.name;
+        
         let url ="https://restcountries.eu/rest/v2/name/"+props.name+"?fullText=true"
         doApiGet(url)
         // doApiGet(apiUrl)
@@ -18,13 +18,31 @@ function Main(props) {
         })
 
     },[props.name])
+
+    useEffect(()=>{
+        
+        let url ="https://restcountries.eu/rest/v2/all"
+        doApiGet(url)
+        // doApiGet(apiUrl)
+        .then(data=>{
+            // console.log(data);
+            setCode(data)
+        })
+
+    },[])
+
+
     
     return (
-        <div className="container">
-            {
-                
-            }
-            <CountryItem state_arr={state_arr} count={setCount}/>
+        <div className="container mt-3">
+           {state_arr.map((item,i) => {
+               
+                return (
+                    
+                    <CountryItem key ={item.callingCodes[0]} item={item} allArr={code} setName= {props.setName} />
+                )
+            })}
+            {/* <CountryItem state_arr={state_arr} count={setCount}/> */}
            
         </div>
     )

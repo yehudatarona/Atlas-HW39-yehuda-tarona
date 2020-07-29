@@ -26,7 +26,7 @@ function AppAtlas(props) {
                 </Switch> */}
                 <Header />
                 <Nav setName= {setName}/>
-                <Main name={name}/>
+                <Main name={name} setName= {setName}/>
 
             </Router>
         </div>
