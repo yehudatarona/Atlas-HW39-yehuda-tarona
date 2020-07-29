@@ -1,6 +1,6 @@
 let localUrl = "http://localhost:3000/";
 // let realUrl = "https://restcountries.eu/rest/v2/all"
-let realUrl = "https://restcountries.eu/rest/v2/name/israel"
+let realUrl = "https://restcountries.eu/rest/v2/name/"
 export const apiUrl = realUrl;
 
 export let perPage = 4;

@@ -2,17 +2,13 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import AppMap from './appMap';
 function CountryItem(props) {
-    // let [temp_ar,setTempAr]=useState([])
-    // let state = props.state_arr[0];
+
     let item = props.item;
     let borders = item.borders;
 
-    let temp_ar = props.allArr.filter(item => {
+    let temp_ar = props.allState_arr.filter(item => {
         return (borders.indexOf(item.alpha3Code) > -1)
     })
-    console.log("borders", temp_ar);
-
-
 
     console.log("state", item);
     return (
@@ -28,16 +24,16 @@ function CountryItem(props) {
                     <div >Capital: {item.capital}</div>
                 </div>
             </div>
-           
-            <AppMap item={item} />
-            <div className="row float-left" >
-                <div className="col mt-4">
-                    <h3>States with borders</h3>
-                    <div className="row ">
+
+            <div className="row " >
+                    <AppMap item={item} />
+                <div className="col mt-4 ">
+                    <h3 className>States with borders</h3>
+                    <div className="row pl-2">
                         {temp_ar.map((item, i) => {
                             return (
                                 <div key={i}>
-                                    <Link className="mx-1" onClick={() => { props.setName(item.name) }} to={"/" + item.name}>{item.name}</Link>
+                                    <Link className="mx-1"  onClick={() => { props.setName(item.name) }} to={"/code/" + item.alpha3Code}>{item.name}</Link>
                                 </div>
                             )
                         })}

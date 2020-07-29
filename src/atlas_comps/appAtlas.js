@@ -25,7 +25,7 @@ function AppAtlas(props) {
                     <Route exact path={"/"} component={Main} />
                 </Switch> */}
                 <Header />
-                <Nav setName= {setName}/>
+                <Nav name={name} setName ={setName}/>
                 <Main name={name} setName= {setName}/>
 
             </Router>
