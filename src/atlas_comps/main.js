@@ -3,6 +3,7 @@ import { doApiGet, apiUrl } from '../services/apiService';
 import CountryItem from './CountryItem';
 
 
+
 function Main(props) {
     let [state_arr,setStateArr]=useState([]);
     let [code,setCode]=useState([])
@@ -35,15 +36,16 @@ function Main(props) {
     
     return (
         <div className="container mt-3">
+
            {state_arr.map((item,i) => {
                
-                return (
-                    
-                    <CountryItem key ={item.callingCodes[0]} item={item} allArr={code} setName= {props.setName} />
-                )
-            })}
+               return (
+                   
+                   <CountryItem key ={item.callingCodes[0]} item={item} allArr={code} setName= {props.setName} />
+                   
+                   )
+                })}
             {/* <CountryItem state_arr={state_arr} count={setCount}/> */}
-           
         </div>
     )
 }
