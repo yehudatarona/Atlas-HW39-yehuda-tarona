@@ -1,19 +1,23 @@
 header {
-  min-height: 130px;
+  min-height: 150px;
   /* background-image: url("https://pixabay.com/get/50e7dd454b4fad0bffd89960c62d3e78143edaec5553_1280.png"); */
-  background-image: url("../images/world-67861_640.png");
+  background-image: url("https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg");
+  /* background-image: url("../images/world-67861_640.png"); */
   background-position: center;
-  background-size: cover;
-  
+  background-size: cover; 
+
 }
  .backg{
   min-height: 50px;
-  background-color:rgb(80, 140, 175);
+  /* background-color:rgb(124, 171, 199); */
+  background-color: rgb(0,1,31)
+  
+
 }
 
 nav a {
  
-  color:ivory;
+  color:lightgray;
   font-size: 18px;
   padding: 5px;
   text-decoration: none;

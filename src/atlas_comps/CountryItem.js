@@ -35,7 +35,7 @@ function CountryItem(props) {
                         {temp_ar.map((item, i) => {
                             return (
                                 <div key={i}>
-                                    <Link onClick={() => { props.setCourtryName(item.name) }} className="mr-1"  to={"/code/" + item.alpha3Code} >{item.name}</Link>
+                                    <Link className="mr-1"  to={"/code/" + item.alpha3Code} >{item.name}</Link>
                                 </div>
                             )
                         })}
