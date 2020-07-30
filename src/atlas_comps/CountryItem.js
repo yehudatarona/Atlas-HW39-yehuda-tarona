@@ -13,7 +13,7 @@ function CountryItem(props) {
 
     console.log("state", item);
     return (
-        <div className="container">
+        <div>
             <div className="row" >
                 {/* <img className="float-left mr-2" src={item.flag} alt="Card image cap" height="200" /> */}
                 <div className="float-left mr-2 pic" style={{ backgroundImage: `url(${item.flag})` }}></div>
@@ -27,15 +27,15 @@ function CountryItem(props) {
                 </div>
             </div>
 
-            <div className="row mt-3" >
+            <div className="row mt-2 " >
                 <AppMap item={item} />
                 <div className="col">
                     <h3>States with borders</h3>
-                    <div className="row pl-2">
+                    <div className="row pl-3">
                         {temp_ar.map((item, i) => {
                             return (
                                 <div key={i}>
-                                    <Link onClick={() => { props.setCourtryName(item.name) }} className="mx-1" to={"/code/" + item.alpha3Code} >{item.name}</Link>
+                                    <Link onClick={() => { props.setCourtryName(item.name) }} className="mr-1"  to={"/code/" + item.alpha3Code} >{item.name}</Link>
                                 </div>
                             )
                         })}

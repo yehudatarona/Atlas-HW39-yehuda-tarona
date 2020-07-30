@@ -28,7 +28,7 @@ function AppAtlas(props) {
                 <Route exact path={"/"} component={Main} />
                 <Route exact path={"/country/"} component={Main}/>
                 <Route exact path={"/country/:name"} component={Main}/>
-                <Route exact path={"/code/:countryCode"} component={Main} />
+                <Route exact path={"/code/:countryCode"} setName={setName} component={Main} />
                 {/* </Switch> */}
 
             </Router>
