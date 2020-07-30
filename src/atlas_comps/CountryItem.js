@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import AppMap from './appMap';
+import "../css_comps/atlas.css"
 function CountryItem(props) {
 
     let item = props.item;
@@ -14,7 +15,8 @@ function CountryItem(props) {
     return (
         <div className="container">
             <div className="row" >
-                <img className="float-left mr-2" src={item.flag} alt="Card image cap" height="200" />
+                {/* <img className="float-left mr-2" src={item.flag} alt="Card image cap" height="200" /> */}
+                <div className="float-left mr-2 pic" style={{ backgroundImage: `url(${item.flag})` }}></div>
                 <div className="col">
                     <h3 >{item.name}</h3>
                     <div >populatio: {item.population}</div>
@@ -25,15 +27,15 @@ function CountryItem(props) {
                 </div>
             </div>
 
-            <div className="row" >
+            <div className="row mt-3" >
                 <AppMap item={item} />
-                <div className="col mt-4 ">
+                <div className="col">
                     <h3>States with borders</h3>
                     <div className="row pl-2">
                         {temp_ar.map((item, i) => {
                             return (
                                 <div key={i}>
-                                    <Link onClick={()=>{props.setCourtryName(item.name)}} className="mx-1" to={"/code/" + item.alpha3Code} >{item.name}</Link>
+                                    <Link onClick={() => { props.setCourtryName(item.name) }} className="mx-1" to={"/code/" + item.alpha3Code} >{item.name}</Link>
                                 </div>
                             )
                         })}

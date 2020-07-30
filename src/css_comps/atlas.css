@@ -1,6 +1,7 @@
 header {
   min-height: 150px;
-  background-image: url("https://pixabay.com/get/50e7dd454b4faa0df7c5997cc221317e163fdee354_640.png");
+  /* background-image: url("https://pixabay.com/get/50e7dd454b4fad0bffd89960c62d3e78143edaec5553_1280.png"); */
+  background-image: url("../images/world-67861_640.png");
   background-position: center;
   background-size: cover;
 }
@@ -35,3 +36,10 @@ nav a:hover {
   padding: 0;
   max-width: 30%;
 }
+
+.pic{
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+}  
