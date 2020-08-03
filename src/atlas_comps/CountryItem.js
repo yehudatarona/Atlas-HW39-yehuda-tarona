@@ -14,7 +14,7 @@ function CountryItem(props) {
     console.log("state", item);
     return (
         <div>
-            <div className="row" >
+            <div className="row " >
                 {/* <img className="float-left mr-2" src={item.flag} alt="Card image cap" height="200" /> */}
                 <div className="float-left mr-2 pic" style={{ backgroundImage: `url(${item.flag})` }}></div>
                 <div className="col">
