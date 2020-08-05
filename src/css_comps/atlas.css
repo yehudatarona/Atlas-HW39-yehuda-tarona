@@ -1,0 +1,51 @@
+header {
+  min-height: 150px;
+  /* background-image: url("https://pixabay.com/get/50e7dd454b4fad0bffd89960c62d3e78143edaec5553_1280.png"); */
+  background-image: url("https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg");
+  /* background-image: url("../images/world-67861_640.png"); */
+  background-position: center;
+  background-size: cover; 
+
+}
+ .backg{
+  min-height: 50px;
+  /* background-color:rgb(124, 171, 199); */
+  background-color: rgb(0,1,31)
+  
+
+}
+
+nav a {
+ 
+  color:lightgray;
+  font-size: 18px;
+  padding: 5px;
+  text-decoration: none;
+  text-decoration-style: none;
+}
+nav a:hover {
+  color: aqua;
+    /* background-color:cornsilk; */
+
+  }
+
+.leaflet-container {
+  min-width: 500px;
+  height: 300px;
+  /* margin: auto; */
+  /* border:5px solid red; */
+  padding: 0;
+}
+
+.map{
+  margin: 0;
+  padding: 0;
+  /* max-width: 30%; */
+}
+
+.pic{
+  height: 150px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+}  
